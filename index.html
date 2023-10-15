@@ -17,77 +17,85 @@
     </header>
 
     <main>
-        <section class="card">
-            <header class="card-header">Flexbox Row</header>
-            <p>Use these three properties to create a Flexbox row layout.</p>
-            <pre class="snippet">.row { 
-                display: flex; 
-                flex-direction: row; 
-                flex-wrap: wrap;
-            }</pre>
+        <section>
+            <div class="container1">
+                <div id="card1" class="card">
+                    <header class="card-header">Flexbox Row</header>
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <pre class="snippet">   .row { 
+                        display: flex; 
+                        flex-direction: row; 
+                        flex-wrap: wrap;
+                    }</pre>
+                </div>
+
+                <div id="card2" class="card">
+                    <header class="card-header">Flexbox Column</header>
+                    <p>Use these three properties to create a Flexbox column layout.</p>
+                    <pre class="snippet">   .column {
+                        display: flex;
+                        flex-direction: column
+                    }
+                    </pre>
+                </div>
+
+                <div id="card3" class="card">
+                    <header class="card-header">CSS Grid Layout</header>
+                    <p>Build a 12-column layout using CSS Grid.</p>
+                    <pre class="snippet">   .grid {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns:
+                    repeat (12, 1fr);
+                    }
+                    </pre>
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <header class="card-header">Flexbox Column</header>
-            <p>Use these three properties to create a Flexbox column layout.</p>
-            <pre class="snippet">.column {
-                display: flex;
-                flex-direction: column
-            }
-            </pre>
-        </section>
+        <section>
+            <div class="container2">
+                <div id="card4" class="card">
+                    <header class="card-header">Linear Gradients</header>
+                    <p>This will create a background linear gradient from top to bottom.</p>
+                    <pre class="snippet">   .linear-gradient-background {
+                        background-image: linear-
+                    gradient (
+                        rgba(232, 102, 236, 0.3) 0%
+                        rgba(232, 102, 236, 0.6) 100%
+                    );
+                    }  
+                    </pre>
+                </div>
 
-        <section class="card">
-            <header class="card-header">CSS Grid Layout</header>
-            <p>Build a 12-column layout using CSS Grid.</p>
-            <pre class="snippet">.grid {
-                display: grid;
-                width: 100%;
-                grid-template-columns:
-              repeat (12, 1fr);
-          }
-          </pre>
-        </section>
+                <div id="card5" class="card">
+                    <header class="card-header">Box Transition Glow</header>
+                    <p>Use transition and box shadows to glow on over</p>
+                    <pre class="snippet">   .code-card .card-header {
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-
+                    out;
+                    }
+                    
+                    .code-card:hover,
+                    .code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 8px
+                    rgba(232, 102, 236,1), 0 0 15px
+                    rgba(232, 102, 246, 1);    
+                    }
+                    </pre>
+                </div>
 
-        <section class="card">
-            <header class="card-header">Linear Gradients</header>
-            <p>This will create a background linear gradient from top to bottom.</p>
-            <pre class="snippet">.linear-gradient-background {
-                background-image: linear-
-              gradient (
-                  rgba(232, 102, 236, 0.3) 0%
-                  rgba(232, 102, 236, 0.6) 100%
-              );
-          }  
-          </pre>
-        </section>
-
-        <section class="card">
-            <header class="card-header">Box Transition Glow</header>
-            <p>Use transition and box shadows to glow on over</p>
-            <pre class="snippet">.code-card .card-header {
-                border-radius: 8px;
-                transition: all 0.5s ease-in-
-              out;
-          }
-          
-          .code-card:hover,
-          .code-card:hover .card-header {
-            box-shadow: inset 0px 0px 8px
-          rgba(232, 102, 236,1), 0 0 15px
-          rgba(232, 102, 246, 1);    
-          }
-          </pre>
-        </section>
-
-        <section class="card">
-            <header class="card-header">Overlay Card with Title</header>
-            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
-            <pre class="snippet">.card-header {
-                position: relative;
-                margin-top: -20px;
-            }  
-            </pre>
+                <div id="card6" class="card">
+                    <header class="card-header">Overlay Card with Title</header>
+                    <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    <pre class="snippet">   .card-header {
+                        position: relative;
+                        margin-top: -20px;
+                    }  
+                    </pre>
+                </div>
+            </div>
         </section>
     </main>
   </body>
